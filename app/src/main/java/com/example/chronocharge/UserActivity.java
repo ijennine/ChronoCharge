@@ -3,7 +3,10 @@ package com.example.chronocharge;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
+import android.app.job.JobScheduler;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -29,6 +32,8 @@ public class UserActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button Gobuttton;
     private Button CancelButton;
+    private PluggedReceiver plugged = new PluggedReceiver();
+
 
 
     public static UserActivity instance() {
@@ -58,9 +63,8 @@ public class UserActivity extends AppCompatActivity implements View.OnClickListe
         alarmTextView.setText("Alame");
         alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 
-
-
-
+        IntentFilter iFilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
+        registerReceiver(plugged,iFilter);
 
     }
 
@@ -70,14 +74,24 @@ public class UserActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
+
     public void startService() {
         Intent serviceIntent = new Intent(this, ForegroundService.class);
         serviceIntent.putExtra("inputExtra", "Click to open");
         ContextCompat.startForegroundService(this, serviceIntent);
     }
-    public void stopService() {
+    public void stopForegroundService() {
         Intent serviceIntent = new Intent(this, ForegroundService.class);
         stopService(serviceIntent);
+    }
+    public void stopBtSenderService() {
+        Intent serviceIntent = new Intent(this, BtSenderService.class);
+        stopService(serviceIntent);
+    }
+    public void stopMyJob(Context context, int jobId) {
+        JobScheduler scheduler = (JobScheduler) context.getSystemService(JOB_SCHEDULER_SERVICE);
+        scheduler.cancel(jobId);
+        scheduler.cancelAll();
     }
 
 

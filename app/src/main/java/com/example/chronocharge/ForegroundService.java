@@ -15,11 +15,8 @@ import android.os.IBinder;
 
 import androidx.core.app.NotificationCompat;
 
-import static android.widget.Toast.LENGTH_LONG;
-import static android.widget.Toast.makeText;
-
 public class ForegroundService extends Service {
-    private static final int JOB_ID =1;
+    private static final int JOB_ID =852;
     public static final String CHANNEL_ID = "ForegroundServiceChannel";
 
     @Override
@@ -74,9 +71,9 @@ public class ForegroundService extends Service {
         ComponentName serviceName = new ComponentName(getApplicationContext(), BtSenderService.class);
         JobInfo jobInfo = new JobInfo.Builder(JOB_ID, serviceName).setPeriodic(1000).setRequiresCharging(true).build();
         JobScheduler scheduler = (JobScheduler) getSystemService(Context.JOB_SCHEDULER_SERVICE);
-        int result = scheduler.schedule(jobInfo);
-        if (result == JobScheduler.RESULT_SUCCESS) {
+       /* int result =*/ scheduler.schedule(jobInfo);
+        /*if (result == JobScheduler.RESULT_SUCCESS) {
             makeText(getApplicationContext(), "schedule job avec success", LENGTH_LONG).show();
-        }
+        }*/
     }
 }

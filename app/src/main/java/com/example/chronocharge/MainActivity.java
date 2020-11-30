@@ -2,8 +2,6 @@ package com.example.chronocharge;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -103,24 +101,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
     }
-
     public BTConnection btCommCopie (){return com;}
 
-    private BroadcastReceiver batteryInfoReceiver = new BroadcastReceiver() {
-        //@RequiresApi(api = Build.VERSION_CODES.M)
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            //isCharging = intent.getIntExtra(BatteryManager.EXTRA_STATUS,0)
-           /* if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
-                BatteryManager manager = (BatteryManager)getApplicationContext().getSystemService(getApplicationContext().BATTERY_SERVICE);
-                isCharging = manager.isCharging();
-            }
-            else{*/
-
-
-            }
-
-
-        //}
-    };
 }
