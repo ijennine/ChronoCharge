@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ChronoCharge</string>
+    <string name="send">Next</string>
+    <string name="Go">Go</string>
+    <string name="Cancel">Cancel</string>
+    <string name="alarmTextView">alarmTextView</string>
 </resources>
