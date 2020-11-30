@@ -14,7 +14,7 @@ public class AlarmReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         btComm = comInit.btCommCopie();
-        btComm.sendBatteryLevel("L000");
+        btComm.sendBatteryLevel("000");
         makeText(context, "Message Alarme....", Toast.LENGTH_SHORT).show();
         //Log.d("Btsender","Message alarme...");
         UserActivity inst = UserActivity.instance();
