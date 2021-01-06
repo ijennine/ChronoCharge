@@ -13,7 +13,7 @@ import android.util.Log;
 
 public class BtSenderService extends JobService {
 
-    private String levelMessage = "L100";
+    private String levelMessage = "100";
     private int bLevel ;
     static BTConnection btComm = null; ;
     private MainActivity comInit = new MainActivity();
