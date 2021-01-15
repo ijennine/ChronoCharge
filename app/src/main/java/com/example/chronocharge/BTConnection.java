@@ -7,7 +7,7 @@ import android.util.Log;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-
+/**Classe qui permet de gérer la connexion BT grace qu socket**/
 public class BTConnection extends Thread{
 
     private BluetoothDevice bluetoothDevice;
@@ -17,16 +17,16 @@ public class BTConnection extends Thread{
     private boolean isAlive = true;
     private boolean connectionStatus = false;
 
-
+/** Constructeur de la classe qui prend en paramètre @BluetoothDevice **/
     public  BTConnection (BluetoothDevice device) {
         try {
 
-                this.bluetoothDevice = device;
-                this.bluetoothSocket = device.createRfcommSocketToServiceRecord(device.getUuids()[0].getUuid());
-                bluetoothSocket.connect();
+                bluetoothDevice = device;
+                bluetoothSocket = device.createRfcommSocketToServiceRecord(device.getUuids()[0].getUuid()); // Ouverture de connextion
+                bluetoothSocket.connect(); //connextion
 
-                this.inputStream = bluetoothSocket.getInputStream();
-                this.outputStream = bluetoothSocket.getOutputStream();
+                inputStream = bluetoothSocket.getInputStream(); // recuperation du socket de reception message BT
+                outputStream = bluetoothSocket.getOutputStream(); // recuperation du socket envoie messsage BT
                 connectionStatus = true;
             Log.d("DEBUG", "establish connection");
 //                makeText( getApplicationContext(),"connected to "+ device.getName(), LENGTH_LONG ).show();
@@ -36,19 +36,14 @@ public class BTConnection extends Thread{
             }
         }
 
-    public BTConnection (){
-        /*this.bluetoothSocket = bluetoothSocket;
-        this.inputStream = inputStream;
-        this.outputStream = outputStream;*/
-    }
-
         public boolean connectionStatus(){
         return connectionStatus;
         }
 
-        public void sendBatteryLevel (String mess) {
+        /** Méthode qui permet d'envoyer un caractère par BT en utilisant le socket d'envoie**/
+        public void sendBatteryLevel (char mess) {
             try {
-                outputStream.write( mess.getBytes() );
+                outputStream.write(mess);
                 outputStream.flush();
                 Log.e( "DEBUG", "write message" );
             } catch (IOException e) {
@@ -56,7 +51,8 @@ public class BTConnection extends Thread{
             }
         }
 
-        // Termine la connexion en cours et tue le thread
+        /** Termine la connexion en cours et tue le thread**/
+
         public void close() {
             try {
                 bluetoothSocket.close();
@@ -65,30 +61,6 @@ public class BTConnection extends Thread{
                 Log.e( "DEBUG", "Cannot close socket", e );
             }
         }
-
-    public BluetoothSocket getBluetoothSocket() {
-        return bluetoothSocket;
-    }
-
-    public void setBluetoothSocket(BluetoothSocket bluetoothSocket) {
-        this.bluetoothSocket = bluetoothSocket;
-    }
-
-    public OutputStream getOutputStream() {
-        return outputStream;
-    }
-
-    public void setOutputStream(OutputStream outputStream) {
-        this.outputStream = outputStream;
-    }
-
-    public InputStream getInputStream() {
-        return inputStream;
-    }
-
-    public void setInputStream(InputStream inputStream) {
-        this.inputStream = inputStream;
-    }
 
 }
 

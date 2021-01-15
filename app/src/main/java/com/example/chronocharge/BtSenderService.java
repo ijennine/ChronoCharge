@@ -11,10 +11,13 @@ import android.os.AsyncTask;
 import android.os.BatteryManager;
 import android.util.Log;
 
+/** Service permet de gérer l'envoi des données par BT en de manière périodique*/
+
 public class BtSenderService extends JobService {
 
-    private String levelMessage = "L100";
-    private int bLevel ;
+    private char levelMessage = 'n';
+    private int bLevel = 100;
+    //private int compteur  = 0;
     static BTConnection btComm = null; ;
     private MainActivity comInit = new MainActivity();
 
@@ -26,7 +29,7 @@ public class BtSenderService extends JobService {
         getApplicationContext().registerReceiver(levelReceiver,iFilter);
         Log.d("BtSenderService", "OnstartJob");
         new maTask().execute();
-        return true;
+        return false;
     }
 
     @Override
@@ -34,17 +37,25 @@ public class BtSenderService extends JobService {
         Log.d("BtSenderService", "OnstopJob");
         return true;
     }
-
+/**Définition d'un processus pour envoyer les données par BT en arrière plan**/
     public class maTask extends AsyncTask<Void, Void, Void> {
 
         @Override
         protected Void doInBackground(Void... voids) {
-            btComm.sendBatteryLevel(levelMessage);
+
+            if(bLevel<65) {
+                levelMessage = 'y'; // Charge
+            }
+            else if(bLevel >=65 ){
+                levelMessage = 'n'; // ne charge pas
+            }
+
+            btComm.sendBatteryLevel(levelMessage); // envoie de message
             Log.d("LEVEL", ""+bLevel);
             return null;
         }
     }
-
+    /** Lecture du niveau de batterie grace à broadcast qui est appéle suite à un evenement sur la battérie**/
     private BroadcastReceiver levelReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {

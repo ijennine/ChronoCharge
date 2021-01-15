@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChronoCharge.iml" filepath="$PROJECT_DIR$/.idea/modules/ChronoCharge.iml" group="ChronoCharge" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="ChronoCharge/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChronoCharge.iml" filepath="$PROJECT_DIR$/.idea/modules/ChronoCharge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ChronoCharge.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ChronoCharge.app.iml" />
     </modules>
   </component>
 </project>
