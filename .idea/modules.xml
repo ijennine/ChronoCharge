@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChronoCharge.iml" filepath="$PROJECT_DIR$/.idea/modules/ChronoCharge.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ChronoCharge.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ChronoCharge.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Projet-Arduino.ChronoCharge.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Projet-Arduino.ChronoCharge.app.iml" />
     </modules>
   </component>
 </project>
