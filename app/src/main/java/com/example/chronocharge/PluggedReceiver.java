@@ -4,9 +4,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.BatteryManager;
-import android.widget.Toast;
-
-import static android.widget.Toast.makeText;
 
 public class PluggedReceiver  extends BroadcastReceiver {
 
@@ -14,7 +11,7 @@ public class PluggedReceiver  extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
 
         int test = intent.getIntExtra(BatteryManager.EXTRA_PLUGGED,-1);
-        UserActivity userInst = UserActivity.instance();
+        /*UserActivity userInst = UserActivity.instance();
         if(test == 0){
             makeText(context, "Battery is not charging", Toast.LENGTH_SHORT).show();
             userInst.stopBtSenderService();
@@ -22,7 +19,7 @@ public class PluggedReceiver  extends BroadcastReceiver {
             userInst.stopForegroundService();
 
             userInst.finish();
-        }
+        }*/
 
     }
 }

@@ -16,8 +16,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+/**
+ * L'activité principale dans laquelle nous permoettons à l'utilisateur de pouvoir se connecter au périphérique BT
+ * Nous avons pour cela :
+ * - Activation du péripherique Bt s'il est désactivé
+ * - Affichage des périphériques
+ * - Connexion au périphérique
+ */
 
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
 
     private BluetoothAdapter bluetoothAdapter = null;
@@ -30,7 +37,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button send = null;
     private TextView statutConnection;
     private ListView deviceList;
-
 
 
     @Override
@@ -49,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
             if ( ! bluetoothAdapter.isEnabled() ) {
                 Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-                startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
+                startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT); // Activation du périph Bt s'il ne l'est pas
                 statutConnection.setText("Relaunch App");
             }
 
@@ -68,6 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    /** Permet d'afficher la liste des périphérique BT et de selctionner un parmi **/
 
     private ListView.OnItemClickListener deviceListListener = new ListView.OnItemClickListener() {
         @Override public void onItemClick(AdapterView<?> adapter, View view, int arg2, long rowId) {
@@ -101,6 +108,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
     }
+
+    /** Cette méthode permet de pouvoir recuperer le socket creer pour la communication BT*/
     public BTConnection btCommCopie (){return com;}
 
 }

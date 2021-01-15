@@ -5,79 +5,60 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="LEVEL" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8736537d-1a6b-44a5-b8cc-f7720a1eb418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/app/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/chronocharge/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/chronocharge/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/chronocharge/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/chronocharge/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/chronocharge/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/chronocharge/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-    </list>
+    <list default="true" id="04f3f87b-d913-41f6-8512-afcf50b785d1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_4_API_22" />
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view />
-      </state>
-    </system>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectId" id="1kYdcrvb2H8CvKpp6qnPpk1w7kK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1kcthaTmA3kguoNX38AaM9hZRYN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3a_API_30_x86" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-12-04T21:19:39.155Z" />
+    <property name="ResourceManagerPrefKey.ResourceType" value="ANIMATOR" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="android.sdk.path" value="$PROJECT_DIR$/../../AppData/Local" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.-1341989728">
+      <recent name="com.example.chronocharge" />
+    </key>
+    <key name="android.template.2084100469">
+      <recent name="com.example.chronocharge" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.chronocharge" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -87,13 +68,14 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
-      <module name="app" />
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="ChronoCharge.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -129,11 +111,16 @@
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -144,12 +131,99 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8736537d-1a6b-44a5-b8cc-f7720a1eb418" name="Default Changelist" comment="" />
-      <created>1605881540943</created>
+      <changelist id="04f3f87b-d913-41f6-8512-afcf50b785d1" name="Default Changelist" comment="" />
+      <created>1606011827439</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1605881540943</updated>
+      <updated>1606011827439</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2670" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607117111940">
+      <screen x="2256" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2670" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1504.972/2256.0.1920.1050@2256.0.1920.1050" timestamp="1607117111940" />
+    <state x="3504" y="232" width="374" height="587" key="#com.intellij.ide.util.MemberChooser" timestamp="1610730318958">
+      <screen x="2256" y="0" width="1920" height="1050" />
+    </state>
+    <state x="3504" y="232" key="#com.intellij.ide.util.MemberChooser/0.0.1504.972/2256.0.1920.1050@2256.0.1920.1050" timestamp="1610730318958" />
+    <state x="1248" y="260" width="374" height="587" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1606352804646" />
+    <state x="1248" y="261" width="374" height="587" key="#com.intellij.ide.util.MemberChooser/0.28.1920.1052@0.28.1920.1052" timestamp="1606222705287" />
+    <state x="693" y="303" width="524" height="504" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606220075440">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="693" y="303" width="524" height="504" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1606220075440" />
+    <state x="693" y="303" width="524" height="504" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1606188102965">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="693" y="303" width="524" height="504" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1606188102965" />
+    <state x="711" y="410" width="488" height="289" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1606221493594">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="711" y="410" width="488" height="289" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.28.1920.1052@0.28.1920.1052" timestamp="1606221493594" />
+    <state x="2348" y="92" width="1736" height="866" key="AVDManager" timestamp="1607117850081">
+      <screen x="2256" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2348" y="92" width="1736" height="866" key="AVDManager/0.0.1504.972/2256.0.1920.1050@2256.0.1920.1050" timestamp="1607117850081" />
+    <state x="543" y="312" width="824" height="486" key="AndroidCreateResourceFileDialog" timestamp="1606224150100">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="543" y="312" width="824" height="486" key="AndroidCreateResourceFileDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1606224150100" />
+    <state x="582" y="262" width="424" height="486" key="FileChooserDialogImpl" timestamp="1607327707355">
+      <screen x="0" y="0" width="1504" height="972" />
+    </state>
+    <state x="582" y="262" key="FileChooserDialogImpl/0.0.1504.972@0.0.1504.972" timestamp="1607327707355" />
+    <state x="743" y="312" width="424" height="486" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1606184982834" />
+    <state width="730" height="125" key="GridCell.Tab.0.bottom" timestamp="1610108422185">
+      <screen x="0" y="0" width="1504" height="972" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1504.972/2256.0.1920.1050@2256.0.1920.1050" timestamp="1607117849944" />
+    <state width="730" height="125" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1610108422185" />
+    <state width="1874" height="298" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1606369448074" />
+    <state width="1874" height="298" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1606237045411" />
+    <state width="730" height="125" key="GridCell.Tab.0.center" timestamp="1610108422185">
+      <screen x="0" y="0" width="1504" height="972" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1504.972/2256.0.1920.1050@2256.0.1920.1050" timestamp="1607117849943" />
+    <state width="730" height="125" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1610108422185" />
+    <state width="1874" height="298" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1606369448074" />
+    <state width="1874" height="298" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1606237045410" />
+    <state width="730" height="125" key="GridCell.Tab.0.left" timestamp="1610108422185">
+      <screen x="0" y="0" width="1504" height="972" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1504.972/2256.0.1920.1050@2256.0.1920.1050" timestamp="1607117849943" />
+    <state width="730" height="125" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1610108422185" />
+    <state width="1874" height="298" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1606369448073" />
+    <state width="1874" height="298" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1606237045410" />
+    <state width="730" height="125" key="GridCell.Tab.0.right" timestamp="1610108422185">
+      <screen x="0" y="0" width="1504" height="972" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1504.972/2256.0.1920.1050@2256.0.1920.1050" timestamp="1607117849943" />
+    <state width="730" height="125" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1610108422185" />
+    <state width="1874" height="298" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1606369448074" />
+    <state width="1874" height="298" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1606237045411" />
+    <state x="2717" y="170" key="SettingsEditor" timestamp="1607117086138">
+      <screen x="2256" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2717" y="170" key="SettingsEditor/0.0.1504.972/2256.0.1920.1050@2256.0.1920.1050" timestamp="1607117086138" />
+    <state width="498" height="454" key="SwitcherDM" timestamp="1606354372655">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="498" height="454" key="SwitcherDM/0.27.1920.1053@0.27.1920.1053" timestamp="1606354372655" />
+    <state width="498" height="453" key="SwitcherDM/0.28.1920.1052@0.28.1920.1052" timestamp="1606151173804" />
+    <state x="699" y="348" width="511" height="414" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1606173795076">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="699" y="348" width="511" height="414" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1606173795076" />
+    <state x="865" y="214" width="672" height="627" key="search.everywhere.popup" timestamp="1610115451488">
+      <screen x="0" y="0" width="1504" height="972" />
+    </state>
+    <state x="865" y="214" width="672" height="627" key="search.everywhere.popup/0.0.1504.972@0.0.1504.972" timestamp="1610115451488" />
+    <state x="1103" y="260" width="672" height="678" key="search.everywhere.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1606015409674" />
+    <state x="685" y="467" width="540" height="174" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1606360166681">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="685" y="467" width="540" height="174" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1606360166681" />
   </component>
 </project>

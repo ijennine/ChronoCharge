@@ -3,8 +3,6 @@ package com.example.chronocharge;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
-import android.app.job.JobScheduler;
-import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
@@ -18,6 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import java.util.Calendar;
+
+/** Activiter qui permet à l'utilisateur de définir l'heure de son reveil**/
 
 public class UserActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -35,7 +35,7 @@ public class UserActivity extends AppCompatActivity implements View.OnClickListe
     private PluggedReceiver plugged = new PluggedReceiver();
 
 
-
+    /** Méthode qui retourne une instance de l'activter user**/
     public static UserActivity instance() {
         return inst;
     }
@@ -68,31 +68,17 @@ public class UserActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-
+    /** permet de changer le texte dans le fichier texte**/
     public void setAlarmText(String alarmText) {
         alarmTextView.setText(alarmText);
     }
-
-
 
     public void startService() {
         Intent serviceIntent = new Intent(this, ForegroundService.class);
         serviceIntent.putExtra("inputExtra", "Click to open");
         ContextCompat.startForegroundService(this, serviceIntent);
     }
-    public void stopForegroundService() {
-        Intent serviceIntent = new Intent(this, ForegroundService.class);
-        stopService(serviceIntent);
-    }
-    public void stopBtSenderService() {
-        Intent serviceIntent = new Intent(this, BtSenderService.class);
-        stopService(serviceIntent);
-    }
-    public void stopMyJob(Context context, int jobId) {
-        JobScheduler scheduler = (JobScheduler) context.getSystemService(JOB_SCHEDULER_SERVICE);
-        scheduler.cancel(jobId);
-        scheduler.cancelAll();
-    }
+
 
 
     @Override
@@ -101,13 +87,13 @@ public class UserActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.Gobutton:
                 startService();
                 alarmTimePicker.setEnabled(false);
-                Log.d("MyActivity", "Alarm On");
+                Log.d("Horloge", "Alarme OK");
                 Calendar calendar = Calendar.getInstance();
                 calendar.set(Calendar.HOUR_OF_DAY, alarmTimePicker.getCurrentHour());
                 calendar.set(Calendar.MINUTE, alarmTimePicker.getCurrentMinute());
                 Intent myIntent = new Intent(this, AlarmReceiver.class);
                 pendingIntent = PendingIntent.getBroadcast(this.getApplicationContext(), 0, myIntent, 0);
-                alarmManager.setExact(AlarmManager.RTC, calendar.getTimeInMillis(), pendingIntent);
+                alarmManager.setExact(AlarmManager.RTC, calendar.getTimeInMillis()-uneHeure, pendingIntent);
                 Gobuttton.setEnabled(false);
                 CancelButton.setEnabled(false);
 
@@ -118,7 +104,7 @@ public class UserActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.Cancelbutton:
                 alarmManager.cancel(pendingIntent);
                 setAlarmText("");
-                Log.d("MyActivity", "Alarm Off");
+                Log.d("Horloge", "Alarm KO");
                 break;
         }
 

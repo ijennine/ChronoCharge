@@ -15,6 +15,8 @@ import android.os.IBinder;
 
 import androidx.core.app.NotificationCompat;
 
+/** Un service qui permet d'executer l'application en arrière plan même si ke programme est fermé**/
+
 public class ForegroundService extends Service {
     private static final int JOB_ID =852;
     public static final String CHANNEL_ID = "ForegroundServiceChannel";
@@ -53,7 +55,7 @@ public class ForegroundService extends Service {
     public void onDestroy() {
         super.onDestroy();
     }
-
+    /**Définitiopn de la barre de notification**/
     private void createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel serviceChannel = new NotificationChannel(
@@ -66,10 +68,10 @@ public class ForegroundService extends Service {
         }
     }
 
-
+    /** Mise en place d'un scheduler d'une période T=30s**/
     public void scheduleJobSender() {
         ComponentName serviceName = new ComponentName(getApplicationContext(), BtSenderService.class);
-        JobInfo jobInfo = new JobInfo.Builder(JOB_ID, serviceName).setPeriodic(1000).setRequiresCharging(true).build();
+        JobInfo jobInfo = new JobInfo.Builder(JOB_ID, serviceName).setPeriodic(30000).setRequiresCharging(true).build();
         JobScheduler scheduler = (JobScheduler) getSystemService(Context.JOB_SCHEDULER_SERVICE);
        /* int result =*/ scheduler.schedule(jobInfo);
         /*if (result == JobScheduler.RESULT_SUCCESS) {
