@@ -18,6 +18,8 @@ public class BtSenderService extends JobService {
     private char levelMessage = 'n';
     private int bLevel = 100;
     //private int compteur  = 0;
+    private String levelMessage = "100";
+    private int bLevel ;
     static BTConnection btComm = null; ;
     private MainActivity comInit = new MainActivity();
 
